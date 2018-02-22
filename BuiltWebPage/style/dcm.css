@@ -1,0 +1,465 @@
+body { 
+    font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    background-color: #888;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4em;
+    margin: 0;
+    font-weight: normal;
+    /*clear: both;*/
+}
+
+h1 {
+    font-size: 22pt;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 15pt;
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 13pt;
+    padding: 10px 0 10px 0;
+}
+
+h4 {
+    font-size: 12pt;
+    padding: 20px 0 10px 0;
+}
+
+p {
+    line-height: 1.4em;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+iframe {
+    display: none
+}
+
+#all {
+    width: 100%;
+    padding: 0;
+    background-color: #888;
+    color: #fff;
+    margin: auto;
+}
+
+#header {
+    color: #fff;
+    padding: 14px 20px 5px 20px;
+    border-bottom: 1px solid #fff;
+    font-family: RobotoSlab-Regular, Roboto-Regular, Helvetica, Arial, sans-serif;
+}
+
+#header h1, #header h2, #header h3, #header h4 {
+    clear: none;
+    line-height: 1.1em;
+    padding: 0;
+}
+
+#header h1 {
+    padding: 4px 0;
+}
+
+#main_container, #main {
+    background-color: #ccc;
+}
+
+#main_container {
+    width: 100%;
+}
+
+#main {
+    width: 1120px;
+    min-width: 1120px;
+    max-width: 1120px;
+    padding: 25px 20px 15px 20px;
+    min-height: 300px; 
+    color: #000;
+    clear: both;
+    text-align: left;
+    margin: auto;
+}
+
+#mainGame {
+    width: 1120px;
+    min-width: 1120px;
+    max-width: 1120px; 
+    color: #000;
+    clear: both;
+    text-align: left;
+}
+
+
+#main a, #main a:link, #main a:visited, #main a:active, #main a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#main h2 a, #main h3 a, #main h4 a, #main h5 a,
+#main h2 a:hover, #main h3 a:hover, #main h4 a:hover, #main h5 a:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+#main ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main ul ul {
+    padding: 0 0 0 2em;
+}
+
+#main #toc li {
+    margin: 1em 0 0;
+}
+
+#main #toc ul li {
+    margin: 0;
+}
+
+#footer {
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-top: 1px solid #fff;
+    min-height: 48px;
+    text-align: center;
+}
+
+body.text #main p, body.text #main div, body.text #main h2, 
+body.text #main h3, body.text #main h4, body.text #main ul,
+body.text #main ol {
+    line-height: 1.5em;
+    max-width: 45em;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    color: #eec;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.kb_logo {
+    float: left;
+    margin: 3px 10px 0 0;
+    width: auto;
+}
+
+.dcm_logo a {
+    text-decoration: none;
+}
+
+#dcm_logo, #dcm_logo_print {
+    vertical-align: middle;
+    border: 0;
+}
+
+.creativecommons {
+    font-size: 0.65em;
+}
+
+.creativecommons  {
+    font-size: 0.65em;
+}
+
+.creativecommons a {
+    text-decoration: none;
+}
+
+.creativecommons a:hover {
+    text-decoration: underline;
+}
+
+input {
+  border: 1px solid #666;
+  color:#fff;
+  background: #333;
+  height: 20px;
+  padding: 1px;
+}
+
+input[type=text] {
+    padding: 1px 8px;
+}
+
+
+.button {
+  padding: 3px 5px;
+  border: 1px solid #666;
+  border-radius: 2px;
+  color:#fff;
+  font-size: 8.5pt;
+  height: 24px;
+  background: #637F57 url(images/button.png) repeat-x scroll 5px center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #799158 url(images/button_hover.png) repeat-x scroll 5px center;
+  border: 1px solid #5D6F43;
+}
+
+[disabled],
+.button:disabled, 
+.button[disabled],
+.button[disabled="disabled"],
+[disabled]:hover,
+.button:disabled:hover {
+  border: 1px solid #666;
+  background: #333 url(images/button_disabled.png) repeat-x scroll 5px center !important;
+  color:#ccc !important;
+}
+
+ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+/* Top menu */
+
+#menu a:hover, #menu .selected {
+    color: #fff;
+    background-color: #aaa;
+}
+
+#menu {
+    width: 100%;
+    background-color: #888;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    font-family: RobotoCondensed-Regular, Roboto-Regular, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#menu a {
+    display: inline-table;
+    padding: 3px 10px 0 10px;
+    width: auto;
+    height: 21px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.change_language {
+    float: right;
+}
+
+/* Text formatting */
+
+.quote {
+    font-style: italic;
+}
+
+/* Illustrations */
+
+.illustration {
+    display: block;
+    width: 400px;
+    float: right;
+    clear: right;
+    margin: 0 0 0 15px;
+}
+
+.illustration_text {
+    font-style:italic;
+    margin-bottom: 15px;
+}
+
+/* Transcriptions of entire pages */
+
+.page_transcription {
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+/* List of readings */
+
+.readings th, .readings td {
+    padding: 2px 15px 2px 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Colophon */
+
+#colophon {
+    display: table;
+}
+
+#colophon p {
+    display: table-row;
+}
+
+#colophon p span {
+    display: table-cell;
+    padding: 5px 10px 0 0;
+}
+
+/* Footnotes */
+
+.footnote_reference, .footnote_number {
+    position: relative;
+    top: -.5em;
+    font-size: .85em;
+    font-style: normal;
+}
+
+.footnote_number {
+    display: block;
+    width: 2em;
+    margin-bottom: -1.7em;
+    margin-left: -1.3em;
+}
+
+.footnotes {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.footnote {
+    margin-left: 1.3em;
+    margin-bottom: .3em;
+}
+
+/* Abbreviations */
+
+#main a.abbr {
+    border-bottom: 1px dashed #666;
+    cursor: help;   
+    text-decoration: none;
+    color: #000;
+}
+#main a:hover.abbr .expan {
+    visibility:visible;
+}
+
+#main .expan {
+    display:inline;
+    position: absolute;
+    visibility:hidden;
+    white-space: normal;
+    text-decoration:none;
+    color: black;
+    background-color:#ddd;
+    padding: 1px;
+    padding-bottom: 5px;
+    z-index:250;
+    padding: 8px 4px 4px 4px;
+    width: auto;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: -5px;
+    border: 1px solid #ddd;
+    font-weight:normal;
+    font-style: normal;
+    text-align: left;
+    box-shadow: 7px 7px 10px 5px #333;
+    border-radius: 4px;
+    /* For non-CSS3 FireFox */
+    -moz-box-shadow: 7px 7px 10px 5px #333;
+    -moz-border-radius: 4px;
+    /* For MSIE 6-8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#333333')"; 
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#333333'); 
+}
+
+
+
+/* SPECIAL SYMBOLS */
+
+.musical_symbol {
+    font-family: 'Bravura Text';
+    position: relative;
+}
+
+.notes {
+    font-size: 1.5em;
+    line-height: .1em;
+    top: .4em;
+}
+
+/* Embedded fonts */
+/* Unicode music symbols font */
+ @font-face {
+	font-family: 'Bravura Text';
+	src: url('fonts/BravuraText.eot');
+	src: local('Bravura Text'), 
+	       url('fonts/BravuraText.eot?#iefix') format('embedded-opentype'),
+	       url('fonts/BravuraText.ttf') format('truetype'), 
+	       url('fonts/BravuraText.woff') format('woff'), 
+	       url('fonts/BravuraText.svg#BravuraText') format('svg');
+} 
+
+@font-face{
+    font-family:RobotoCondensed-Regular;
+    src:url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face{ 
+    font-family:Roboto-Regular;
+    src:url('fonts/Roboto-Regular.ttf');
+	src: local('Roboto-Regular'), 
+         url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:RobotoSlab-Regular;
+    src:url('fonts/RobotoSlab-Regular.ttf')
+}
+
+/* Print-related style rules */
+
+#dcm_logo_print,
+#KBLogo_print {
+    display: none;
+}
+
+
+@media print {
+    
+    .noprint {
+        display: none;
+    }
+    
+    body, #all, #main, #header, #footer {
+        color: #000;
+        background-color: #fff;
+    } 
+    
+    #main  {
+        margin-top: 10pt;
+        padding-top: 5pt;
+        border-top: .1pt solid #000;    
+    }
+    
+    #footer {
+        margin-top: 10pt;
+        border-top: .1pt solid #000;
+    }
+    
+    #dcm_logo,
+    #KBLogo {
+        display: none;
+    }
+    #dcm_logo_print,
+    #KBLogo_print {
+        display: inline;
+    }
+    
+
+}

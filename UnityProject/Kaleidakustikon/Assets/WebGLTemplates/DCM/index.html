@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kaleidakustikon</title>
+
+    <!-- general -->
+    <link type="text/css" href="style/dcm.css" rel="stylesheet" />
+    
+    <!-- Unity -->
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%");
+    </script>
+    <script src="javascript/unityCommands.js"></script>
+    
+    <!-- Utilities -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript" ></script> 
+    
+    <!-- canvg for rendering header and footer svgs -->
+    <script type="text/javascript" src="Utilities/javascript/libs/rgbcolor.js"></script>
+    <script type="text/javascript" src="Utilities/javascript/libs/StackBlur.js"></script>
+    <script type="text/javascript" src="Utilities/javascript/libs/canvg.js"></script>
+        
+    <script src="Utilities/javascript/libs/jspdf.debug.js"></script>
+        
+    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js" type="text/javascript" ></script>
+        
+    <!--///////////-->
+    <!-- Saxon-CE  -->
+    <!--///////////-->  
+    <script type="text/javascript" language="javascript" src="Utilities/javascript/Saxonce/Saxonce.nocache.js"></script>
+        
+    <script type="text/javascript" language="javascript" src="Utilities/javascript/loadMEI.js"></script>
+    <script src="Utilities/javascript/handlePDF.js"></script>
+</head>
+
+<body>
+    <script>
+        var pathToIndex = "";
+    </script>
+    
+    
+    <div id="all">
+        <div id="header">
+            <div class="kb_logo">
+                <a href="http://www.kb.dk" title="Det Kongelige Bibliotek"><img id="KBLogo" title="Det Kongelige Bibliotek" alt="KB Logo" src="style/images/kb_white.png" /><img id="KBLogo_print" title="Det Kongelige Bibliotek" alt="KB Logo" src="style/images/kb.png" /></a>
+            </div>
+            <h4>Friedrich Kuhlau</h4>
+            <h1>Kaleidakustikon</h1>
+        </div>
+        <div id="menu" class="noprint">
+            <a href="./" class="selected">Play</a><!--
+            --><a href="introduction.html">Introduction</a><!--
+            --><a href="instructions.html">Instructions</a><!--
+            --><a href="commentary.html">Critical Commentary</a><!--
+            --><a href="bibliography.html">Bibliography</a><!--
+            --><a href="colophon.html">About</a>
+        </div>
+        <div id="gameContainer" style="width: 100vw; height: 50vw; margin: auto"></div>
+        <div id="footer">
+            <a href="http://www.kb.dk/dcm" title="DCM" style="text-decoration:none;"><img alt="DCM Logo" src="./images/dcm_logo_small_white.png" id="dcm_logo" /><img alt="DCM Logo" src="./images/dcm_logo_small.png" id="dcm_logo_print" /></a> 2016 Danish Centre for Music Editing | The Royal Library | P.O. Box 2149 | Copenhagen K, Denmark | <a name="www.kb.dk" id="www.kb.dk" href="http://www.kb.dk/dcm">www.kb.dk/dcm</a>
+            <br />
+            <span class="creativecommons"> This work is licensed under a <a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons
+            Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>
+        </span>
+        </div>
+    </div>
+</body>
+
+</html>
